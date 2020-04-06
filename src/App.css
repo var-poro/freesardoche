@@ -1,0 +1,192 @@
+@font-face {font-family: "BeaufortforLOL-Bold";
+  src: url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot"); /* IE9*/
+  src: url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff2") format("woff2"), /* chrome firefox */
+  url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.woff") format("woff"), /* chrome firefox */
+  url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.svg#BeaufortforLOL-Bold") format("svg"); /* iOS 4.1- */
+}
+
+body{
+  overflow: hidden;
+}
+
+.App {
+  user-select: none;
+  -webkit-user-select: auto;
+  text-align: center;
+  background-size: cover;
+  background-image: url('https://sp-cdn.streamlabs.com/img/9ee27d4341c37b89aa6f8b86aa2e5c71/eZoWAMvQls6jIFh41WaMDAcNBRP4ZFdhet0LheYY.png');
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 3rem;
+  color: #d5b26e;
+  font-size: 2rem;
+  font-family: 'BeaufortforLOL-Bold';
+}
+
+.vr{
+  height: 1px;
+  width: 100%;
+  max-width: 120px;
+  background: #997338;
+  margin: 0 12px;
+}
+
+button{
+  -webkit-appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: buttonface;
+  box-sizing: border-box;
+  margin: 0.5em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
+  font-family: 'Beaufort for LOL',serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #937341;
+  padding: 12px 25px;
+  background: linear-gradient(180deg,#ecc572 0,#815500);
+  outline: none;
+  cursor: pointer;
+  line-height: 1;
+  border: none;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 25px rgba(0,0,0,.11);
+  transition: color .2s;
+  min-width: 110px;
+  max-width: 100%;
+}
+
+button:hover{
+  color: #c4b998;
+}
+
+button:before {
+      top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #111;
+  z-index: -1;
+}
+
+.fullDate{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.fullDate div:not(:first){
+  width: 120px;
+}
+
+.Days{
+  font-size: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Clock-days{
+  margin: 2rem;
+}
+
+.Clock-hours, .Clock-minutes, .Clock-seconds{
+  font-size: 1.5rem;
+}
+
+footer{
+  margin-top: 7.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.videoYt{
+  background: linear-gradient(180deg,#ecc572 0,#815500);
+  padding: 2px;
+  margin: 2rem;
+  width: 30vw;
+  height: 30vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-title{
+  font-size: 3.5rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background: -webkit-linear-gradient(#ecc572, #937341);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media screen and (max-width: 975px){
+  body{
+    overflow-y: auto;
+  }
+  .App-title{
+    font-size:2rem;
+  }
+  .videoYt{
+    width: 80%;
+    margin: 2rem 0;
+    height: auto;
+  }
+  .Clock-days{
+    margin-top: 0;
+  }
+  .fullDate{
+    flex-direction: column;
+  }
+  .vr{
+    width: 20px;
+    margin: 1rem;
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
