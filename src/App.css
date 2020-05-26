@@ -19,7 +19,8 @@
   user-select: none;
   -webkit-user-select: auto;
   text-align: center;
-  padding-top: 3rem;
+  text-align: -webkit-center;
+  padding-top: 1rem;
   color: #d5b26e;
   font-size: 2rem;
   font-family: 'BeaufortforLOL-Bold';
@@ -124,6 +125,7 @@ button:before {
 
 footer{
   margin-top: 7.5rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
   text-transform: uppercase;
   text-align: center;

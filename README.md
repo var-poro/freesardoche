@@ -1,5 +1,3 @@
-Made by Poro for non-commercial use. PoroTV on twitch or tv_poro on Twitter if you wanna contact me. Please PR if you have any improvements you want to add!
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
